@@ -8,8 +8,7 @@ export default function Home() {
     const res = await fetch(
       "https://vercel-function-page.vercel.app/api/hello"
     );
-    const data = await res.json();
-    console.log(data);
+    console.log(res);
   };
   return (
     <main
