@@ -5,7 +5,9 @@ const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   const handleClick = async () => {
-    const res = await fetch("http://localhost:3000/api/hello");
+    const res = await fetch(
+      "https://vercel-function-page.vercel.app/api/hello"
+    );
     const data = await res.json();
     console.log(data);
   };
